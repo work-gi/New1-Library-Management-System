@@ -4,6 +4,8 @@
  */
 package edu.ijse.lms;
 
+import edu.ijse.lms.view.LoginView;
+
 /**
  *
  * @author ACER
@@ -15,6 +17,7 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        new LoginView().setVisible(true);
     }
     
 }

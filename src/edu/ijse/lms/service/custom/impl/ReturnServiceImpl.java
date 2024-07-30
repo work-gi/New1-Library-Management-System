@@ -37,7 +37,7 @@ public class ReturnServiceImpl implements ReturnService{
 //            entity.setBookCode(dto.getBookCode());
 //            entity.setMemberID(dto.getMemberID());
             BorrowingEntity borrowingentity = borrowingDao.get(dto.getMemberID(),dto.getBookCode());
-            double fineRate = 1.0; // Fine rate per day
+            double fineRate = 100.0; // Fine rate per day
             SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
             Date dueDate = sdf.parse(borrowingentity.getDueDate());
             Date returnDate = sdf.parse(dto.getReturnDate());
