@@ -49,6 +49,7 @@ public class BookCategoryView extends javax.swing.JFrame {
         savebtn = new javax.swing.JButton();
         deletebtn = new javax.swing.JButton();
         updatebtn = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -64,30 +65,38 @@ public class BookCategoryView extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel1.setText("Book Category Form");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, -1, -1));
 
         bookcode.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         bookcode.setText("Category Code");
+        getContentPane().add(bookcode, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 72, -1, -1));
 
         categary.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         categary.setText("Category");
+        getContentPane().add(categary, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 117, -1, -1));
 
         codetxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 codetxtActionPerformed(evt);
             }
         });
+        getContentPane().add(codetxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 70, 108, 25));
 
         language.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         language.setText("Description");
+        getContentPane().add(language, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 162, 107, -1));
 
         desctxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 desctxtActionPerformed(evt);
             }
         });
+        getContentPane().add(desctxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(177, 160, 272, 27));
+        getContentPane().add(categarytxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(177, 115, 156, 27));
 
         categorytbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -107,6 +116,9 @@ public class BookCategoryView extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(categorytbl);
 
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 251, 674, 181));
+
+        savebtn.setBackground(new java.awt.Color(255, 102, 51));
         savebtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         savebtn.setText("Save");
         savebtn.addActionListener(new java.awt.event.ActionListener() {
@@ -114,7 +126,9 @@ public class BookCategoryView extends javax.swing.JFrame {
                 savebtnActionPerformed(evt);
             }
         });
+        getContentPane().add(savebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(629, 201, -1, -1));
 
+        deletebtn.setBackground(new java.awt.Color(255, 102, 51));
         deletebtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         deletebtn.setText("Delete");
         deletebtn.addActionListener(new java.awt.event.ActionListener() {
@@ -122,7 +136,9 @@ public class BookCategoryView extends javax.swing.JFrame {
                 deletebtnActionPerformed(evt);
             }
         });
+        getContentPane().add(deletebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(532, 201, -1, -1));
 
+        updatebtn.setBackground(new java.awt.Color(255, 102, 51));
         updatebtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         updatebtn.setText("Update");
         updatebtn.addActionListener(new java.awt.event.ActionListener() {
@@ -130,70 +146,10 @@ public class BookCategoryView extends javax.swing.JFrame {
                 updatebtnActionPerformed(evt);
             }
         });
+        getContentPane().add(updatebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(428, 201, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addContainerGap()
-                            .addComponent(desctxt, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                            .addGap(273, 273, 273)
-                            .addComponent(jLabel1)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(bookcode)
-                                        .addComponent(categary)
-                                        .addComponent(language, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGap(25, 25, 25)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(codetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(categarytxt, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 674, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(updatebtn)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(deletebtn)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(savebtn)))))
-                .addContainerGap(32, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addComponent(jLabel1)
-                .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(language)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(bookcode, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(codetxt))
-                                .addGap(18, 18, 18)
-                                .addComponent(categarytxt, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(categary))
-                        .addGap(18, 18, 18)
-                        .addComponent(desctxt, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(savebtn)
-                    .addComponent(deletebtn)
-                    .addComponent(updatebtn))
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(17, 17, 17))
-        );
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/lms/images/bok new1212.jpeg"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 730, 450));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -272,6 +228,7 @@ public class BookCategoryView extends javax.swing.JFrame {
     private javax.swing.JButton deletebtn;
     private javax.swing.JTextField desctxt;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;

@@ -57,39 +57,50 @@ public class ReturnView extends javax.swing.JFrame {
         finetxt = new javax.swing.JTextField();
         borrowingsearchbtn = new javax.swing.JButton();
         borrowingdata = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(204, 255, 0));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel1.setText("Return Books");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 23, 271, -1));
 
         memberid.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         memberid.setText("Member ID");
+        getContentPane().add(memberid, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 90, -1, -1));
 
         membidtxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 membidtxtActionPerformed(evt);
             }
         });
+        getContentPane().add(membidtxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(159, 89, 125, 32));
 
         bookcode.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         bookcode.setText("Book Code");
+        getContentPane().add(bookcode, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 142, -1, -1));
 
         bookcodetxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bookcodetxtActionPerformed(evt);
             }
         });
+        getContentPane().add(bookcodetxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(159, 141, 125, 32));
 
         returndate.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         returndate.setText("Return Date");
+        getContentPane().add(returndate, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 200, 108, -1));
 
         returndatetxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 returndatetxtActionPerformed(evt);
             }
         });
+        getContentPane().add(returndatetxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(159, 199, 125, 32));
 
+        searchfinebtn.setBackground(new java.awt.Color(51, 255, 255));
         searchfinebtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         searchfinebtn.setText("Search Fine");
         searchfinebtn.addActionListener(new java.awt.event.ActionListener() {
@@ -97,7 +108,10 @@ public class ReturnView extends javax.swing.JFrame {
                 searchfinebtnActionPerformed(evt);
             }
         });
+        getContentPane().add(searchfinebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(302, 197, -1, -1));
+        getContentPane().add(searchfinetxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(465, 197, 226, 34));
 
+        addbtn.setBackground(new java.awt.Color(0, 255, 255));
         addbtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         addbtn.setText("Add");
         addbtn.addActionListener(new java.awt.event.ActionListener() {
@@ -105,6 +119,7 @@ public class ReturnView extends javax.swing.JFrame {
                 addbtnActionPerformed(evt);
             }
         });
+        getContentPane().add(addbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(319, 249, -1, -1));
 
         borrowingtbl.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         borrowingtbl.setModel(new javax.swing.table.DefaultTableModel(
@@ -125,6 +140,9 @@ public class ReturnView extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(borrowingtbl);
 
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 301, 665, 141));
+
+        jButton1.setBackground(new java.awt.Color(51, 255, 255));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton1.setText("Place Return");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -132,16 +150,20 @@ public class ReturnView extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 454, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel2.setText("Fine");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 252, 45, -1));
 
         finetxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 finetxtActionPerformed(evt);
             }
         });
+        getContentPane().add(finetxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(159, 251, 125, 32));
 
+        borrowingsearchbtn.setBackground(new java.awt.Color(0, 255, 255));
         borrowingsearchbtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         borrowingsearchbtn.setText("Search");
         borrowingsearchbtn.addActionListener(new java.awt.event.ActionListener() {
@@ -149,87 +171,11 @@ public class ReturnView extends javax.swing.JFrame {
                 borrowingsearchbtnActionPerformed(evt);
             }
         });
+        getContentPane().add(borrowingsearchbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(302, 139, -1, -1));
+        getContentPane().add(borrowingdata, new org.netbeans.lib.awtextra.AbsoluteConstraints(428, 139, 263, 34));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(306, 306, 306)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jButton1)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(returndate, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(bookcode)
-                                        .addComponent(memberid)
-                                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGap(18, 18, 18)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(membidtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(bookcodetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(returndatetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(finetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addGroup(layout.createSequentialGroup()
-                                                    .addGap(35, 35, 35)
-                                                    .addComponent(addbtn))
-                                                .addGroup(layout.createSequentialGroup()
-                                                    .addGap(18, 18, 18)
-                                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                        .addGroup(layout.createSequentialGroup()
-                                                            .addComponent(borrowingsearchbtn)
-                                                            .addGap(39, 39, 39)
-                                                            .addComponent(borrowingdata, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                                        .addGroup(layout.createSequentialGroup()
-                                                            .addComponent(searchfinebtn)
-                                                            .addGap(35, 35, 35)
-                                                            .addComponent(searchfinetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE))))))))
-                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 665, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(32, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(memberid)
-                    .addComponent(membidtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(bookcode)
-                            .addComponent(bookcodetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(borrowingsearchbtn)
-                            .addComponent(borrowingdata, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(24, 24, 24)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(returndate)
-                            .addComponent(returndatetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(searchfinebtn)))
-                    .addComponent(searchfinetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(addbtn)
-                    .addComponent(jLabel2)
-                    .addComponent(finetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, Short.MAX_VALUE)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
-                .addGap(14, 14, 14))
-        );
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/lms/images/bookdrop.jpg"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 780, 520));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -329,6 +275,7 @@ public class ReturnView extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel memberid;
     private javax.swing.JTextField membidtxt;

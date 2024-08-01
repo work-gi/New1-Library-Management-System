@@ -52,6 +52,7 @@ public class BookView extends javax.swing.JFrame {
         updatebtn = new javax.swing.JButton();
         categorycode = new javax.swing.JLabel();
         categorytxt = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -67,33 +68,43 @@ public class BookView extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        booklable.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        booklable.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         booklable.setText("Book Form");
+        getContentPane().add(booklable, new org.netbeans.lib.awtextra.AbsoluteConstraints(223, 22, 239, -1));
 
         booklable1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         booklable1.setText("Book Code");
+        getContentPane().add(booklable1, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 99, 107, -1));
 
         booklable2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         booklable2.setText("Book Title");
+        getContentPane().add(booklable2, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 145, 107, -1));
 
         booklable3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         booklable3.setText("Author");
+        getContentPane().add(booklable3, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 191, 107, -1));
 
         booklable4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         booklable4.setText("Availability");
+        getContentPane().add(booklable4, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 145, 107, -1));
+        getContentPane().add(codetxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(151, 102, 159, 25));
 
         authortxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 authortxtActionPerformed(evt);
             }
         });
+        getContentPane().add(authortxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(151, 194, 159, 25));
+        getContentPane().add(titletxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(151, 148, 159, 25));
 
         availabilitytxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 availabilitytxtActionPerformed(evt);
             }
         });
+        getContentPane().add(availabilitytxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(533, 148, 114, 25));
 
         booktable.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         booktable.setModel(new javax.swing.table.DefaultTableModel(
@@ -114,6 +125,9 @@ public class BookView extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(booktable);
 
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 304, 706, 163));
+
+        deletebtn.setBackground(new java.awt.Color(255, 255, 153));
         deletebtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         deletebtn.setText("Delete");
         deletebtn.addActionListener(new java.awt.event.ActionListener() {
@@ -121,7 +135,9 @@ public class BookView extends javax.swing.JFrame {
                 deletebtnActionPerformed(evt);
             }
         });
+        getContentPane().add(deletebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(557, 239, -1, -1));
 
+        savebtn.setBackground(new java.awt.Color(255, 255, 102));
         savebtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         savebtn.setText("Save");
         savebtn.addActionListener(new java.awt.event.ActionListener() {
@@ -129,7 +145,9 @@ public class BookView extends javax.swing.JFrame {
                 savebtnActionPerformed(evt);
             }
         });
+        getContentPane().add(savebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 239, -1, -1));
 
+        updatebtn.setBackground(new java.awt.Color(255, 255, 102));
         updatebtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         updatebtn.setText("Update");
         updatebtn.addActionListener(new java.awt.event.ActionListener() {
@@ -137,92 +155,21 @@ public class BookView extends javax.swing.JFrame {
                 updatebtnActionPerformed(evt);
             }
         });
+        getContentPane().add(updatebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(447, 239, -1, -1));
 
         categorycode.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         categorycode.setText("Category Code");
+        getContentPane().add(categorycode, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 99, -1, -1));
 
         categorytxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 categorytxtActionPerformed(evt);
             }
         });
+        getContentPane().add(categorytxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(533, 102, 159, 25));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(304, 304, 304)
-                .addComponent(booklable, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(booklable1, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(booklable2, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(booklable3, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(titletxt, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(codetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(categorycode)
-                                            .addComponent(booklable4, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(18, 18, 18))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(authortxt, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(0, 0, Short.MAX_VALUE)))
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(categorytxt, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(availabilitytxt, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(40, 40, 40))
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(updatebtn)
-                        .addGap(18, 18, 18)
-                        .addComponent(deletebtn)
-                        .addGap(18, 18, 18)
-                        .addComponent(savebtn)))
-                .addGap(23, 23, 23))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addComponent(booklable)
-                .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(booklable1)
-                    .addComponent(codetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(categorycode, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(categorytxt, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(booklable2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(titletxt, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(availabilitytxt, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(booklable4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(booklable3)
-                    .addComponent(authortxt, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(20, 20, 20)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(savebtn)
-                    .addComponent(deletebtn)
-                    .addComponent(updatebtn))
-                .addGap(33, 33, 33)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(31, 31, 31))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/lms/images/book1.jpeg"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 760, 500));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -315,6 +262,7 @@ public class BookView extends javax.swing.JFrame {
     private javax.swing.JTextField categorytxt;
     private javax.swing.JTextField codetxt;
     private javax.swing.JButton deletebtn;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;

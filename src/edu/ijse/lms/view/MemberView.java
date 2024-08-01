@@ -53,6 +53,7 @@ public class MemberView extends javax.swing.JFrame {
         deletebtn1 = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         membertbl = new javax.swing.JTable();
+        jLabel6 = new javax.swing.JLabel();
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -68,21 +69,27 @@ public class MemberView extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel1.setText("Member Form");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(235, 19, 319, -1));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel2.setText("Member ID");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 101, 133, -1));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel3.setText("Member Name");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 150, 133, -1));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel4.setText("Contact ");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(489, 150, 133, -1));
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel5.setText("Address");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(489, 107, 133, -1));
 
         membidtxt.setToolTipText("");
         membidtxt.addActionListener(new java.awt.event.ActionListener() {
@@ -90,6 +97,7 @@ public class MemberView extends javax.swing.JFrame {
                 membidtxtActionPerformed(evt);
             }
         });
+        getContentPane().add(membidtxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(197, 101, 96, 31));
 
         nametxt.setToolTipText("");
         nametxt.addActionListener(new java.awt.event.ActionListener() {
@@ -97,6 +105,7 @@ public class MemberView extends javax.swing.JFrame {
                 nametxtActionPerformed(evt);
             }
         });
+        getContentPane().add(nametxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(197, 150, 142, 31));
 
         addresstxt.setToolTipText("");
         addresstxt.addActionListener(new java.awt.event.ActionListener() {
@@ -104,6 +113,7 @@ public class MemberView extends javax.swing.JFrame {
                 addresstxtActionPerformed(evt);
             }
         });
+        getContentPane().add(addresstxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(628, 101, 142, 31));
 
         contacttxt.setToolTipText("");
         contacttxt.addActionListener(new java.awt.event.ActionListener() {
@@ -111,7 +121,9 @@ public class MemberView extends javax.swing.JFrame {
                 contacttxtActionPerformed(evt);
             }
         });
+        getContentPane().add(contacttxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(628, 150, 142, 31));
 
+        savebtn.setBackground(new java.awt.Color(102, 255, 102));
         savebtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         savebtn.setText("Save");
         savebtn.setActionCommand("");
@@ -125,7 +137,9 @@ public class MemberView extends javax.swing.JFrame {
                 savebtnActionPerformed(evt);
             }
         });
+        getContentPane().add(savebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(704, 229, -1, -1));
 
+        updatebtn.setBackground(new java.awt.Color(51, 255, 51));
         updatebtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         updatebtn.setText("Update");
         updatebtn.setActionCommand("");
@@ -134,7 +148,9 @@ public class MemberView extends javax.swing.JFrame {
                 updatebtnActionPerformed(evt);
             }
         });
+        getContentPane().add(updatebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(503, 229, -1, -1));
 
+        deletebtn1.setBackground(new java.awt.Color(102, 255, 102));
         deletebtn1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         deletebtn1.setText("Delete");
         deletebtn1.setActionCommand("");
@@ -148,6 +164,7 @@ public class MemberView extends javax.swing.JFrame {
                 deletebtn1ActionPerformed(evt);
             }
         });
+        getContentPane().add(deletebtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(607, 229, -1, -1));
 
         membertbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -167,74 +184,10 @@ public class MemberView extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(membertbl);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 756, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(26, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(41, 41, 41)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(nametxt, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(membidtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(contacttxt, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(addresstxt, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(35, 35, 35))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(updatebtn)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(deletebtn1)
-                                .addGap(12, 12, 12)
-                                .addComponent(savebtn)
-                                .addGap(29, 29, 29))))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(321, 321, 321)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(35, 35, 35)
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel2)
-                        .addComponent(membidtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(addresstxt, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(nametxt, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(contacttxt, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4))
-                .addGap(48, 48, 48)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(savebtn)
-                    .addComponent(deletebtn1)
-                    .addComponent(updatebtn))
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(20, Short.MAX_VALUE))
-        );
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 279, 756, 192));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/lms/images/bok new333.jpg"))); // NOI18N
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 480));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -328,6 +281,7 @@ public class MemberView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;

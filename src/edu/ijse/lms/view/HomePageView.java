@@ -33,15 +33,18 @@ public class HomePageView extends javax.swing.JFrame {
         borrowbtn = new javax.swing.JButton();
         returnbtn = new javax.swing.JButton();
         bookcategory = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
 
         jToolBar1.setRollover(true);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(102, 255, 102));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setBackground(new java.awt.Color(255, 102, 51));
+        jLabel1.setBackground(new java.awt.Color(153, 255, 153));
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
         jLabel1.setText("Library Management");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 0, 490, -1));
 
         memberbtn.setBackground(new java.awt.Color(102, 255, 51));
         memberbtn.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -51,6 +54,7 @@ public class HomePageView extends javax.swing.JFrame {
                 memberbtnActionPerformed(evt);
             }
         });
+        getContentPane().add(memberbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(108, 187, 299, -1));
 
         bookbtn.setBackground(new java.awt.Color(255, 255, 51));
         bookbtn.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -60,6 +64,7 @@ public class HomePageView extends javax.swing.JFrame {
                 bookbtnActionPerformed(evt);
             }
         });
+        getContentPane().add(bookbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(534, 187, 272, -1));
 
         borrowbtn.setBackground(new java.awt.Color(255, 51, 204));
         borrowbtn.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -69,6 +74,7 @@ public class HomePageView extends javax.swing.JFrame {
                 borrowbtnActionPerformed(evt);
             }
         });
+        getContentPane().add(borrowbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(108, 464, 299, -1));
 
         returnbtn.setBackground(new java.awt.Color(51, 255, 255));
         returnbtn.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -78,6 +84,7 @@ public class HomePageView extends javax.swing.JFrame {
                 returnbtnActionPerformed(evt);
             }
         });
+        getContentPane().add(returnbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(567, 464, 272, -1));
 
         bookcategory.setBackground(new java.awt.Color(255, 102, 51));
         bookcategory.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -87,51 +94,10 @@ public class HomePageView extends javax.swing.JFrame {
                 bookcategoryActionPerformed(evt);
             }
         });
+        getContentPane().add(bookcategory, new org.netbeans.lib.awtextra.AbsoluteConstraints(324, 329, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(108, 108, 108)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(memberbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 127, Short.MAX_VALUE)
-                        .addComponent(bookbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(91, 91, 91))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(borrowbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(returnbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(58, 58, 58))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 490, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(190, 190, 190))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(bookcategory)
-                        .addGap(292, 292, 292))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(43, 43, 43)
-                .addComponent(jLabel1)
-                .addGap(80, 80, 80)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(memberbtn)
-                    .addComponent(bookbtn))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
-                .addComponent(bookcategory)
-                .addGap(80, 80, 80)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(borrowbtn)
-                    .addComponent(returnbtn))
-                .addGap(65, 65, 65))
-        );
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/lms/images/books.jpg"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 900, 520));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -201,6 +167,7 @@ public class HomePageView extends javax.swing.JFrame {
     private javax.swing.JButton bookcategory;
     private javax.swing.JButton borrowbtn;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JToolBar jToolBar1;
     private javax.swing.JButton memberbtn;
     private javax.swing.JButton returnbtn;

@@ -60,27 +60,34 @@ public class BorrowingView extends javax.swing.JFrame {
         addbtn = new javax.swing.JButton();
         duedate = new javax.swing.JLabel();
         duedatetxt = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         memberid.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         memberid.setText("Member ID");
+        getContentPane().add(memberid, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 70, -1, -1));
 
         bookcode.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         bookcode.setText("Book Code");
+        getContentPane().add(bookcode, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 120, -1, -1));
 
         membidtxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 membidtxtActionPerformed(evt);
             }
         });
+        getContentPane().add(membidtxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(207, 68, 125, 32));
 
         bookcodetxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bookcodetxtActionPerformed(evt);
             }
         });
+        getContentPane().add(bookcodetxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(207, 120, 125, 32));
 
+        membsearchbtn.setBackground(new java.awt.Color(255, 51, 204));
         membsearchbtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         membsearchbtn.setText("Search");
         membsearchbtn.addActionListener(new java.awt.event.ActionListener() {
@@ -88,7 +95,9 @@ public class BorrowingView extends javax.swing.JFrame {
                 membsearchbtnActionPerformed(evt);
             }
         });
+        getContentPane().add(membsearchbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(359, 66, -1, -1));
 
+        bookcodesearchbtn.setBackground(new java.awt.Color(255, 51, 204));
         bookcodesearchbtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         bookcodesearchbtn.setText("Search");
         bookcodesearchbtn.addActionListener(new java.awt.event.ActionListener() {
@@ -96,20 +105,26 @@ public class BorrowingView extends javax.swing.JFrame {
                 bookcodesearchbtnActionPerformed(evt);
             }
         });
+        getContentPane().add(bookcodesearchbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(359, 118, -1, -1));
 
         memberdata.setBackground(new java.awt.Color(204, 204, 255));
+        getContentPane().add(memberdata, new org.netbeans.lib.awtextra.AbsoluteConstraints(472, 68, 220, 32));
+        getContentPane().add(bookdata, new org.netbeans.lib.awtextra.AbsoluteConstraints(472, 120, 220, 30));
 
-        borrowing.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        borrowing.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         borrowing.setText("Borrowing Books");
+        getContentPane().add(borrowing, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, -1, -1));
 
         date.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         date.setText("Borrowing Date");
+        getContentPane().add(date, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, 138, -1));
 
         borrowdatetxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 borrowdatetxtActionPerformed(evt);
             }
         });
+        getContentPane().add(borrowdatetxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(207, 170, 125, 32));
 
         borrowingtbl.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         borrowingtbl.setModel(new javax.swing.table.DefaultTableModel(
@@ -130,6 +145,9 @@ public class BorrowingView extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(borrowingtbl);
 
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 277, 665, 141));
+
+        borrowbtn.setBackground(new java.awt.Color(255, 51, 204));
         borrowbtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         borrowbtn.setText("Place Borrow");
         borrowbtn.addActionListener(new java.awt.event.ActionListener() {
@@ -137,7 +155,9 @@ public class BorrowingView extends javax.swing.JFrame {
                 borrowbtnActionPerformed(evt);
             }
         });
+        getContentPane().add(borrowbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(562, 436, -1, -1));
 
+        addbtn.setBackground(new java.awt.Color(255, 51, 204));
         addbtn.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         addbtn.setText("Add");
         addbtn.addActionListener(new java.awt.event.ActionListener() {
@@ -145,94 +165,21 @@ public class BorrowingView extends javax.swing.JFrame {
                 addbtnActionPerformed(evt);
             }
         });
+        getContentPane().add(addbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(359, 220, -1, -1));
 
         duedate.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         duedate.setText("Due Date");
+        getContentPane().add(duedate, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 220, 99, -1));
 
         duedatetxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 duedatetxtActionPerformed(evt);
             }
         });
+        getContentPane().add(duedatetxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(207, 222, 125, 32));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(40, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(borrowbtn)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 665, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(borrowing)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(membidtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(bookcodetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(borrowdatetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(duedatetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(27, 27, 27)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(bookcodesearchbtn, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(membsearchbtn, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(addbtn))))
-                        .addGap(259, 259, 259)))
-                .addGap(33, 33, 33))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(duedate, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(memberid)
-                            .addComponent(bookcode)
-                            .addComponent(date, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(294, 294, 294)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(bookdata, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(memberdata, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(borrowing, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(memberid)
-                        .addComponent(membidtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(membsearchbtn))
-                    .addComponent(memberdata, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(2, 2, 2)
-                        .addComponent(bookdata, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(bookcode)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(bookcodetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(bookcodesearchbtn)))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(date)
-                            .addComponent(borrowdatetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(duedate)
-                    .addComponent(duedatetxt, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(addbtn))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(borrowbtn)
-                .addGap(16, 16, 16))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/lms/images/books new1111.jpg"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 740, 510));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -335,6 +282,7 @@ public class BorrowingView extends javax.swing.JFrame {
     private javax.swing.JLabel date;
     private javax.swing.JLabel duedate;
     private javax.swing.JTextField duedatetxt;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel memberdata;
     private javax.swing.JLabel memberid;
